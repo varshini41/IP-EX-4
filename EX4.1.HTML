@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>count</title>
+</head>
+<body>
+<button onclick="count()">click here</button>
+<script>
+function count()
+{
+var string=prompt("enter the sentence");
+var word=prompt("enter the word");
+var word_count=string.split(" ");
+count=0
+for(let i=0;i<word_count.length;i++)
+{
+if(word_count[i]==word)
+{
+count++
+}}
+document.write("occurance of the word:"+count);
+}
+</script>
+</body>
+</html>

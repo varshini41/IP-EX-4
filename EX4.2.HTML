@@ -1,0 +1,25 @@
+<html>
+ <head>
+ </head>
+ <body style="font-size:20px;text-align:center;">
+ <h2>string that begins and ends with vowel</h2>
+ <br>
+ <script>
+ function stringcheck(str)
+ {
+ if(/^[aeiou]/i.test(str) && /[aeiou]$/i.test(str))
+ {
+ document.write(str);
+ }
+ }
+ const string=prompt("enter string: ");
+ word_arr=string.split(" ");
+ document.write("the words with vowels at the beginning and end: ");
+ for(let i=0;i<word_arr.length;i++)
+ {
+ stringcheck(word_arr[i]);
+ }
+ </script>
+ </body>
+</html>
+OUTPUT
